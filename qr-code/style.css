@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(214 225 239);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code {
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.qr-code img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.qr-code-heading {
+    color: rgb(44 58 80);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.qr-code-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 15px;
+}
+
+.qr-code-text p {
+    color: rgb(128 133 142);
+}
