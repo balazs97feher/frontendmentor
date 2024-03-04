@@ -1,0 +1,24 @@
+* {
+    font-family: 'Lexend Deca';
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display';
+}
+
+section.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+section.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%)
+}
+
+section.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
