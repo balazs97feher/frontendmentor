@@ -20,14 +20,40 @@ body {
 .preview {
     display: flex;
     flex-direction: column;
+
     width: 330px;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
+@media screen and (min-width: 1000px) {
+    html {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .preview {
+        flex-direction: row;
+        width: 920px;
+        height: 500px;
+    }
+
+    .card div.more {
+        margin-top: auto;
+    }
+}
+
 .card {
-    padding: 50px 50px 60px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 65px;
 }
 
 .card h2 {
@@ -36,7 +62,7 @@ body {
     font-size: 40px;
     text-transform: uppercase;
     color: var(--light-grey);
-    margin: 28px 0;
+    margin: 32px 0;
 }
 
 .card p {
@@ -44,7 +70,8 @@ body {
     line-height: 1.65;
     letter-spacing: 0.1px;
 
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 24px;
 }
 
 section.card:nth-child(1) {
@@ -71,9 +98,11 @@ section.card:nth-child(3) a {
     color: var(--very-dark-cyan);
 }
 
-section.card a {
+.card div.more {
+    box-sizing: border-box;
     background-color: var(--light-grey);
-    height: 50px;
+    height: 48px;
+    width: 150px;
     border-radius: 25px;
     padding: 14px 32px;
 }
@@ -84,4 +113,5 @@ section.card a:link {
 
 .attribution {
     margin-top: 50px;
+    text-align: center;
 }
